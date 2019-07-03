@@ -1,4 +1,4 @@
-import  java.util.Scanner;
+import java.util.Scanner;
 public class ptrinh {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -19,11 +19,11 @@ public class ptrinh {
         }
         else {
             double x1 = (-b + Math.sqrt(delta))/(2*a);
-            double x2 = (-b - Math.sqrt(delta))/(2*a);
             if (delta==0){
                 System.out.println("Phuong trinh co nghiem duy nhat la " + x1);
             }
             else {
+                double x2 = (-b - Math.sqrt(delta))/(2*a);
                 System.out.println("Phuong trinh co hai nghiem la " + x1 + " va "+ x2);
             }
         }
