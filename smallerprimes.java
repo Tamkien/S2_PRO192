@@ -17,7 +17,7 @@ public class smallerprimes {
 
     private static boolean check(int n) {
         double sq = Math.sqrt(n);
-        for (int i = 2; i < sq; i++) if (n % i == 0) return false;
+        for (int i = 2; i <= sq; i++) if (n % i == 0) return false;
         return true;
     }
 }
